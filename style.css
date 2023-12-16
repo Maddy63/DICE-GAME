@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #4158D0; */
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Preahvihear", sans-serif;
+}
+main {
+  display: flex;
+}
+.player {
+  width: 25rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 30rem;
+}
+.Player-1 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px 0 0 10px;
+}
+.play {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.notPlay {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player h2 {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+  color: rgb(73, 73, 73);
+}
+.Player-2 {
+  border-radius: 0 10px 10px 0;
+}
+.player .score {
+  font-size: 4rem;
+  font-weight: 100;
+  color: rgb(238, 69, 97);
+  margin: 0;
+}
+.current-score {
+  position: relative;
+  width: 7rem;
+  background-color: rgb(245, 104, 127);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  left: 9rem;
+  top: 6rem;
+}
+
+.btn {
+  position: absolute;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  right: -3.5rem;
+}
+.new-game {
+  top: 2rem;
+}
+.roll-dice {
+  bottom: 6rem;
+}
+.hold {
+  bottom: 3rem;
+}
+.dice-face {
+  position: absolute;
+  right: -2.1rem;
+  top: 9rem;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 2px 2px 6px black;
+  border-radius: 10px;
+  /* display: none; */
+}
+.dice-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
