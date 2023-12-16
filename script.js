@@ -10,14 +10,14 @@ let btnNewGame = document.querySelector(".new-game");
 //initial initialisation
 let currentScore = 0;
 let tCurrntScore = 0;
-diceImage.src = "images/start.PNG";
+diceImage.src = "./images/start.PNG";
 playerOne.classList.add("play");
 playerTwo.classList.add("notPlay");
 //dice roll button to change the dice image
 const diceFaceChange = function () {
   if (tCurrntScore <= 100) {
     const diceNumber = Math.trunc(Math.random() * 6) + 1;
-    diceImage.src = `images/dice-${diceNumber}.PNG`;
+    diceImage.src = `./images/dice-${diceNumber}.PNG`;
     if (diceNumber === 1) {
       playerChange();
     } else {
