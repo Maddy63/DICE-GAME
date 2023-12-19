@@ -1,4 +1,8 @@
 "use strict";
+const btnHowToPlay = document.querySelector(".btnHowToPlay");
+const divInstructions = document.querySelector(".instructions");
+const instructionsContent = document.querySelector(".inst");
+const btnClose = document.querySelector(".close");
 const rollDice = document.querySelector(".roll-dice");
 const diceImage = document.querySelector(".dice-image");
 const holdScore = document.querySelector(".hold");
@@ -68,6 +72,16 @@ const resetGame = function () {
   pScore = document.querySelector(".p1Score");
   diceImage.src = "images/start.png";
 };
+//? button code to display instruction window
+const displayInstructions = function () {
+  divInstructions.classList.remove("displayDiv");
+};
+//close the instruction window which is already opened
+const closeInstruction = function () {
+  divInstructions.classList.add("displayDiv");
+};
 rollDice.addEventListener("click", diceFaceChange);
 holdScore.addEventListener("click", holdPresentScore);
 btnNewGame.addEventListener("click", resetGame);
+btnHowToPlay.addEventListener("click", displayInstructions);
+btnClose.addEventListener("click", closeInstruction);
