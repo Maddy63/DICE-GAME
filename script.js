@@ -71,6 +71,8 @@ const resetGame = function () {
   document.querySelector(".p2Score").textContent = 0;
   pScore = document.querySelector(".p1Score");
   diceImage.src = "images/start.png";
+  currentScore = 0;
+  tCurrntScore = 0;
 };
 //? button code to display instruction window
 const displayInstructions = function () {
